@@ -59,6 +59,13 @@ Follow these steps to set up the project on your local machine:
 
    This will install Playwright, TypeScript, and other necessary development dependencies.
 
+4. **Install Playwright Browsers**:  
+   Ensure Playwright downloads the required browser binaries (Chromium by default):  
+   ```bash
+   npx playwright install chromium
+   ```  
+   *(This step prevents failures due to missing browsers during test execution.)*  
+
 ---
 
 ## Running the Tests
@@ -92,13 +99,6 @@ Once the tests have finished running, you can view the detailed test report. Use
 ```bash
 npm run report
 ```
-
-### 4. **Install Playwright Browsers**:  
-   Ensure Playwright downloads the required browser binaries (Chromium by default):  
-   ```bash
-   npx playwright install chromium
-   ```  
-   *(This step prevents failures due to missing browsers during test execution.)*  
 
 This will open the HTML report generated after the test run. You can view test results, logs, and screenshots if any failures occurred.
 
