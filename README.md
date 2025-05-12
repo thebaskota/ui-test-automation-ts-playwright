@@ -93,6 +93,13 @@ Once the tests have finished running, you can view the detailed test report. Use
 npm run report
 ```
 
+### 4. **Install Playwright Browsers**:  
+   Ensure Playwright downloads the required browser binaries (Chromium by default):  
+   ```bash
+   npx playwright install chromium
+   ```  
+   *(This step prevents failures due to missing browsers during test execution.)*  
+
 This will open the HTML report generated after the test run. You can view test results, logs, and screenshots if any failures occurred.
 
 ---
