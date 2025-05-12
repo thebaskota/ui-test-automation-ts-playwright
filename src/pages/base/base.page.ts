@@ -23,7 +23,7 @@ export abstract class BasePage {
      */
     async waitForPageLoad(state: LoadStates = "load"): Promise<void> {
         try {
-            await this.page.waitForLoadState(state);
+            await this.page.waitForLoadState(state, { timeout: 60000 });
         } catch (error) {
             console.error(`Error while waiting for load state ${state}: `, error);
         }

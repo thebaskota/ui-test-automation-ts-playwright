@@ -1,16 +1,23 @@
 {
-  "name": "ts-playwright-ui-test",
+  "name": "ui-test-automation-ts-playwright",
   "version": "1.0.0",
+  "description": "UI Test Automation Framework using TypeScript and Playwright",
   "main": "index.js",
   "scripts": {
     "test": "playwright test --reporter=html",
     "test:headed": "playwright test --headed --reporter=html",
     "report": "playwright show-report"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "playwright",
+    "typescript",
+    "automation",
+    "ui-testing",
+    "e2e",
+    "test-framework"
+  ],
+  "author": "Pradip Baskota",
+  "license": "MIT",
   "devDependencies": {
     "@playwright/test": "^1.52.0",
     "@types/node": "^22.15.17",
